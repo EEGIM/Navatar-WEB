@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Tutorial</title>
+   
+    <!-- 구글 폰트 적용-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- 아이콘 사용 링크-->
+    <script src="https://kit.fontawesome.com/2a811fae19.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="" width=150px></a>
+
+        <div>
+            <ul id = "navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="arfitting.html">AR Fitting</a></li>
+                <li><a href="foryou.html">For You</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="signicon"><a href="signin.html"><i class="fa-solid fa-user"></i></a></li>
+                <!-- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="tab">
+            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/n1.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/n1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/n2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/n3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/n4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+            <a href="#"><i class="fa-brands fa-adn"></i></a>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home > Shop > Brand1 > T-Shirts</h6>
+            <h4>Awesome T-Shirt</h4>
+            <h2>30,000</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="nornal">Add to Cart</button>
+            <button>Buy</button>
+        </div>
+    </section>
+
+    <section id="prodetails2" class="section-p1">
+    <h2>Product Details</h2>
+    <div class="prodetails2img">
+        <img src="img/products/n1.jpg" width="100%" id="MainImg" alt="">
+
+    </div>
+    
+    </section>
+ 
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="" width="100px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>덕성여자대학교</p>
+            <p><strong>Phone: </strong>0123456789</p>
+            <p><strong>Github: </strong>git address</p>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Informatiion</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="copyright">
+            <p> Copyright ©  </p>
+        </div>
+    </footer>
+
+    <!--작은 이미지 선택하면 큰 이미지로 보이게 바꾸기-->
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -52,7 +52,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #f1f4ff;
+    background: #eae4d3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 
     z-index: 999; /*헤더랑 hero 영역 구분*/
@@ -70,6 +70,7 @@ body {
 #navbar li{
     list-style: none;
     padding: 0 20px;
+    
     position: relative;
 }
 
@@ -79,11 +80,11 @@ body {
     font-weight: 600;
     color: #575757;
     transition: 0.3s ease; /*네비탭 마우스 가져갔을 때 색 부드럽게 바뀌게 설정*/
-}
+} 
 
 #navbar li a:hover, /* hover: 네비탭 마우스 가져가면 색 변하는 거*/
 #navbar li a.active {  /*active: 네비탭 현재 선택된 페이지에서 상태 변화 */
-    color: #088178; 
+    color: #083c81; 
 }
 
 #navbar li a.active::after,
@@ -91,11 +92,52 @@ body {
     content: "";
     width: 30%;
     height: 2px;
-    background: #088178;
+    background: #083c81;
     position: absolute;
     bottom: -4px;
     left: 20px;
 }
+/* 서브 카테고리 */
+#navbar .sub-bar{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar .sub-bar li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+} 
+
+#navbar li:hover .sub-bar{
+    display: block;
+    position: absolute;
+    background-color: #eae4d3; 
+    margin-left: -50px;
+    margin-top: 0px;
+} 
+
+#navbar li:hover .sub-bar ul{
+    display: block;
+    
+}
+
+#navbar li:hover .sub-bar ul li{
+    margin: 10px;
+    border-radius: 0;
+    text-align: center;
+
+}
+
+
+#navbar li .sub-bar a.active::after,
+#navbar li .sub-bar a:hover::after {
+    background: none;
+
+}
+
+
 
 /* 가로웹화면에서 햄버거, x 아이콘 안 보이게*/
 #tab {
@@ -109,7 +151,7 @@ body {
 
 /* Home Page*/
 #hero{
-    background-image: url("img/banner2.jpeg");
+    background-image: url("img/hero.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -252,11 +294,107 @@ footer .copyright{
     text-align: center;
 }
 
+/* Shop Page */
+#page{
+    text-align: center;
+}
 
+#page a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
 
+#page a i{
+    font-size: 16px;
+    font-weight: 600;
+}
 
+/* Single Product */
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
 
-/* Responsive Wed Settings (Tab)*/
+}
+
+#prodetails .fa-adn{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    top: 130px;
+
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #adadad;
+    color: #fff;
+    width: 100px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Responsive Wed Settings (Tab) */
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -324,7 +462,7 @@ footer .copyright{
     }
 }
 
-/* Responsive Wed Settings (phone)*/
+/* Responsive Wed Settings (phone) */
 @media (max-width: 477px) {
 
     .section-p1 {
@@ -349,4 +487,4 @@ footer .copyright{
         margin: 0 0 15px 0;
     }
 
-}
+} 
