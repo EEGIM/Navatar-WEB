@@ -153,46 +153,80 @@ body {
     display: none;
 }
 
-/* Home Page*/
-#hero{
-    background-image: url("img/hero.jpg");
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
 
-#hero h4{
-    padding-bottom: 15px;
-}
-
-#hero h1{
-    color: #088178;
-}
-
-#hero button{
-    background-image: url("img/button.png");
-    background-color: transparent;
-    color: #088178;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-/*New Product*/
+/* 상품 리스트 */
 #product1{
     text-align: center;
+    width: 100%;
+    display: flex;
 }
 
+/* 사이드 메뉴 */
+#product1 .sidebar {
+    width: 15%;
+    padding-top: 50px;
+    height: 100%;
+    left: 0;
+    /*background: #a8a6a6;*/
+    margin-right: 20px;
+}
+
+#product1 .sidebar .text{
+    color: rgb(30, 30, 30);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    /*background: #f9a10a;*/
+    letter-spacing: 1px;
+}
+
+.sidebar ul{
+    background: #e7c25e;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li{
+    line-height: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar ul li a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.sidebar ul li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+
+.sidebar ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.sidebar ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+
+
+
+
 #product1 .pro-container {
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
@@ -258,6 +292,24 @@ body {
     right: 10px;
 }
 
+#page{
+    text-align: center;
+}
+
+#page a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#page a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -297,134 +349,6 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
-
-/* Shop Page */
-#page{
-    text-align: center;
-}
-
-#page a{
-    text-decoration: none;
-    background-color: #088178;
-    padding: 15px 20px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: 600;
-}
-
-#page a i{
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-/* Single Product */
-#prodetails .single-pro-image{
-    width: 40%;
-    margin-right: 50px;
-
-}
-
-#prodetails .fa-adn{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50px;
-    background-color: #e8f6ea;
-    font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    top: 130px;
-
-}
-
-.small-img-group{
-    display: flex;
-    justify-content: space-between;
-}
-
-.small-img-col{
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-#prodetails{
-    display: flex;
-    margin-top: 20px;
-}
-
-#prodetails .single-pro-details{
-    width: 50%;
-    padding-top: 30px;
-}
-
-#prodetails .single-pro-details h4{
-    padding: 40px 0 20px 0;
-
-}
-
-#prodetails .single-pro-details h2{
-    font-size: 26px;
-
-}
-
-#prodetails .single-pro-details select{
-    display: block;
-    padding: 5px;
-    margin-bottom: 10px;
-
-}
-
-#prodetails .single-pro-details input{
-    width: 50px;
-    height: 47px;
-    padding-left: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-#prodetails .single-pro-details input:focus{
-    outline: none;
-}
-
-#prodetails .single-pro-details button{
-    background-color: #adadad;
-    color: #fff;
-    width: 100px;
-    height: 47px;
-    padding-left: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-/* ar피팅 화면 */
-#arfit-logo{
-    background-color: #dcc7b0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* For You */
-
-
-
-/* About */
-#aboutpage{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-
-
-
-
 
 
 /* Responsive Wed Settings (Tab) 

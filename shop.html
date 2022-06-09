@@ -14,31 +14,66 @@
     <!-- 아이콘 사용 링크-->
     <script src="https://kit.fontawesome.com/2a811fae19.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt="" width=150px></a>
+        <a href="index.html"><img src="img/logo.png" class="logo" alt="" width=150px></a>
 
         <div>
             <ul id = "navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
+
+                <li><a class="active">Shop</a>
+                <div class="sub-bar">
+                    <ul>
+                        <li><a href="shop.html">ROMANTIC CLOWN</a></li>
+                        <li><a href="shop.html">A PIECE OF YOU</a></li>
+                        <li><a href="shop.html">MADRID</a></li>
+                        <li><a href="shop.html">LUVISFALSE</a></li>
+                        <li><a href="shop.html">LEEKIM</a></li>
+                    </ul>
+                </div>
+                </li>
+
                 <li><a href="arfitting.html">AR Fitting</a></li>
                 <li><a href="foryou.html">For You</a></li>
                 <li><a href="about.html">About</a></li>
-                <li id="signicon"><a href="signin.html"><i class="fa-solid fa-user"></i></a></li>
+                <li id="loginicon"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
                 <!-- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="tab">
-            <a href="signin.html"><i class="fa-solid fa-user"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
 
     <section id="product1" class="section-p1">
+
+        <div class="sidebar">
+            <div class="text">ROMANTIC CLOWN</div>
+            <ul>
+                <li><a href="#">Cate1</a></li>
+                <li>
+                    <a href="#">Cate2</a>
+                    <ul>
+                        <li><a href="#">scate1</a></li>
+                        <li><a href="#">scate2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Cate3</a>
+                    <ul>
+                        <li><a href="#">scate3</a></li>
+                        <li><a href="#">scate4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cate4</a></li>
+                <li><a href="#">Cate5</a></li>
+            </ul>
+        </div>
 
         <div class="pro-container">
             <div class="pro" onclick="window.location.href='product.html';">
