@@ -223,18 +223,11 @@ body {
 
 /* location area */
 
-#product1 .pro-container .location {
-
-    background: #a8a6a6;
-    
-}
-
-
 #product1 .container{
     display: inline-block;
 }
 
-#product1 .container .location{
+.location{
     /*background: #083c81;*/
     display: flex;
     margin-left: 40px;
@@ -242,11 +235,31 @@ body {
 
 }
 
-#product1 .container .location p{
-    font-weight: 600;
-    color: #727272;
+.location_item{
+    display: inline-block;
     font-size: 12px;
+
 }
+
+.location_item:not(:last-of-type)::after{
+    content: '\203a'; /* 작은 > 아이콘 */
+    margin: 0 5px;
+    color: #606063;
+}
+
+.location_link{
+    text-decoration: none;
+    color: #606063;
+}
+
+.location_link:hover{
+    text-decoration: underline;
+}
+
+.location_link-active{
+    font-weight: 500;
+}
+
 
 
 #product1 .pro-container {
@@ -298,7 +311,7 @@ body {
 
 #product1 .pro .des h4 {
     padding-top: 7px;
-    color: #088178;
+    color: #083c81;
     font-size: 15px;
     font-weight: 700;
 }
@@ -308,10 +321,10 @@ body {
     height: 40px;
     line-height: 40px;
     border-radius: 50px;
-    background-color: #e8f6ea;
+    background-color: #f7f3e7;
     font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
+    color: #083c81;
+    border: 1px solid #eae4d3;
     position: absolute;
     bottom: 20px;
     right: 10px;
