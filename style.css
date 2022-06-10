@@ -421,6 +421,128 @@ footer .copyright{
     margin-top: 50px;
 }
 
+/* Login Page*/
+
+#login-area{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+#login-area .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#login-area .contentBx .formBx{
+    
+}
+
+#login-area .contentBx .formBx h2{
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #083c81;
+    letter-spacing: 1px;
+}
+
+#login-area .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+
+#login-area .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #222;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#login-area .contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #083c81;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #222;
+    background: transparent;
+    /*
+    border-radius: 20px;
+    */
+}
+
+#login-area .contentBx .formBx .inputBx input[type="submit"]{
+    background: #083c81;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#login-area .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background: #0a4ba0;
+}
+
+#login-area .contentBx .formBx .remember{
+    margin-bottom: 10px;
+    color: #575757;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#login-area .contentBx .formBx .inputBx p{
+    color: #575757;
+}
+
+#login-area .contentBx .formBx .inputBx p a{
+    color: #083c81;
+}
+
+#login-area .contentBx .formBx h4{
+    color: #222;
+    text-align: center;
+    margin: 40px 0 10px;
+    font-weight: 500;
+}
+
+#login-area .contentBx .formBx .scl{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;   
+}
+
+#login-area .contentBx .formBx .scl li{
+    list-style: none;
+    width: 50%;
+    height: 50px;
+    display:inline-flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#login-area .contentBx .formBx .scl li img{
+    justify-content: center; 
+    width: 120px;  
+    height: 50px;
+    justify-content: space-between;
+}
+
 
 
 
