@@ -225,6 +225,7 @@ body {
 
 #product1 .container{
     display: inline-block;
+    
 }
 
 .location{
@@ -263,7 +264,7 @@ body {
 
 
 #product1 .pro-container {
-    /*width: 80%;*/
+    
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -337,7 +338,7 @@ body {
 #page a{
     text-decoration: none;
     background-color: #083c81;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 4px;
     color: #fff;
     font-weight: 600;
