@@ -225,6 +225,7 @@ body {
 
 #product1 .container{
     display: inline-block;
+    width: 100%;
     
 }
 

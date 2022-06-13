@@ -399,6 +399,17 @@ footer .copyright{
     margin-right: 10px;
 }
 
+#prodetails2 h2{
+    text-align: center;
+}
+
+/* Review */
+#review h2{
+    text-align: center;
+
+}
+
+
 /* ar피팅 화면 */
 #arfit-logo{
     background-color: #dcc7b0;
