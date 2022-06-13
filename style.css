@@ -518,32 +518,27 @@ footer .copyright{
     font-weight: 500;
 }
 
+
 #login-area .contentBx .formBx .scl{
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 100%;   
+    flex-direction: column;
+    width: 100%;
+ 
 }
 
 #login-area .contentBx .formBx .scl li{
     list-style: none;
-    width: 50%;
-    height: 50px;
-    display:inline-flex;
     cursor: pointer;
     justify-content: center;
-    align-items: center;
-
-
+    
 }
 
 #login-area .contentBx .formBx .scl li img{
     justify-content: center; 
-    width: 120px;  
-    height: 50px;
-    justify-content: space-between;
 }
-
+/*
 
 
 

@@ -14,7 +14,7 @@
     <!-- 아이콘 사용 링크-->
     <script src="https://kit.fontawesome.com/2a811fae19.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
     <section id="header">
@@ -49,20 +49,45 @@
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
-
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off! </p>
-        <button>Shop Now</button>
-    </section>
-
+        
     <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection</p>
+        <div class="sidebar">
+            <div class="text">A PIECE OF YOU</div>
+            <ul>
+                <li><a href="#">Cate1</a></li>
+                <li>
+                    <a href="#">Cate2</a>
+                    <ul>
+                        <li><a href="#">scate1</a></li>
+                        <li><a href="#">scate2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Cate3</a>
+                    <ul>
+                        <li><a href="#">scate3</a></li>
+                        <li><a href="#">scate4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cate4</a></li>
+                <li><a href="#">Cate5</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul class="location">
+                <li class="location_item">
+                    <a href="index.html" class="location_link">HOME</a>
+                </li>
+                <li class="location_item">
+                    <a href="shop.html" class="location_link">SHOP</a>
+                </li>
+                <li class="location_item">
+                    <a href="shop_pou.html" class="location_link location_link-active">A PIECE OF YOU</a>
+                </li>
+            </ul>
+
         <div class="pro-container">
-            <div class="pro">
+            <div class="pro" onclick="window.location.href='product.html';">
                 <img src="img/products/n1.jpg" alt="">
                 <div class="des">
                     <span>Brand1</span>
@@ -135,8 +160,14 @@
                 <a href="#"><i class="fa-brands fa-adn"></i></a>
             </div>
         </div>
+        </div>
     </section>
 
+    <section id="page" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-circle-arrow-right"></i></a>
+    </section>
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="" width="100px">
