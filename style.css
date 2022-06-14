@@ -374,11 +374,12 @@ footer .copyright{
     display: block;
     padding: 5px;
     margin-bottom: 10px;
+    height: 30px;
 
 }
 
 #prodetails .single-pro-details input{
-    width: 50px;
+    width: 40px;
     height: 47px;
     padding-left: 10px;
     font-size: 16px;
@@ -392,22 +393,137 @@ footer .copyright{
 #prodetails .single-pro-details button{
     background-color: #083c81;
     color: #fff;
-    width: 100px;
-    height: 47px;
     padding-left: 10px;
     font-size: 16px;
     margin-right: 10px;
+    /* border-radius: 30px; */
+    
+
 }
+
+#prodetails .single-pro-details .proBtn{
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details button .normal{
+    display: inline-block;
+
+}
+
+#prodetails .single-pro-details .proBtn .cart{
+    background-color: #606063;
+    width: 110px;
+    height: 50px;
+}
+
+#prodetails .single-pro-details .proBtn .buy{
+    background-color: #606063;
+    width: 100px;
+    height: 50px;
+}
+
+#prodetails .single-pro-details .proBtn .heart{
+    background-color: #606063;
+    width: 50px;
+    height: 50px;
+}
+
+#prodetails .single-pro-details .proBtn .heart{
+    font-size: 25px;
+}
+
 
 #prodetails2 h2{
     text-align: center;
 }
+
+/* product 상세 페이지 location area */
+.location{
+    display: flex;
+}
+
+.location_item{
+    display: inline-block;
+    font-size: 12px;
+}
+
+.location_item:not(:last-of-type)::after{
+    content: '\203a'; /* 작은 > 아이콘 */
+    margin: 0 5px;
+    color: #606063;
+}
+
+.location_link{
+    text-decoration: none;
+    color: #606063;
+}
+
+.location_link:hover{
+    text-decoration: underline;
+}
+
+.location_link-active{
+    font-weight: 500;
+}
+
 
 /* Review */
 #review h2{
     text-align: center;
 
 }
+
+#review .review_container{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    
+
+}
+
+#review .review_container.review_list{
+    display: flex;
+    width: 100%;
+}
+.review_nick{
+    font-size: 20px;
+
+}
+
+.review_p_info{
+    margin-top: 30px;
+    display: flex;
+} 
+
+.review_p_info1 img{
+    width: 70px;
+    display: flex;
+}
+
+.review_p_info2{
+    margin-left: 20px;
+    text-align: center;
+}
+
+.review_star_wrap{
+    margin-top: 20px;
+}
+
+.review_star i{
+    color: #f6cd17;
+}
+
+.review_text{
+    margin-top: 15px;
+}
+
+.review_photo{
+    margin-top: 15px;
+}
+
+
+
 
 
 /* ar피팅 화면 */

@@ -177,7 +177,6 @@ body {
     font-weight: 600;
     line-height: 30px;
     text-align: center;
-    /*background: #f9a10a;*/
     letter-spacing: 1px;
 }
 
@@ -391,7 +390,7 @@ footer .copyright{
 }
 
 
-/* Responsive Wed Settings (Tab) 
+/* Responsive Wed Settings (Tab) */
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -459,7 +458,7 @@ footer .copyright{
     }
 }
 
- Responsive Wed Settings (phone) 
+/* Responsive Wed Settings (phone) */
 @media (max-width: 477px) {
 
     .section-p1 {
@@ -485,4 +484,3 @@ footer .copyright{
     }
 
 } 
-*/
