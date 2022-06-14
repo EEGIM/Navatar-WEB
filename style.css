@@ -467,9 +467,33 @@ footer .copyright{
 }
 
 
-/* Review */
+
+
+/* Review Write */
+.review_write{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+
+}
+
+.review_write .review_write_form{
+    
+}
+
+.review_write .review_write_form span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+
+/* Review area*/
 #review h2{
     text-align: center;
+    margin-top: 20px;
 
 }
 
@@ -506,7 +530,7 @@ footer .copyright{
     text-align: center;
 }
 
-.review_star_wrap{
+.review_star_rating{
     margin-top: 20px;
 }
 
