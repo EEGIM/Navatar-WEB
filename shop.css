@@ -392,6 +392,7 @@ footer .copyright{
 
 /* Responsive Wed Settings (Tab) */
 @media (max-width:799px) {
+
     .section-p1 {
         padding: 40px 40px;
     }
@@ -448,8 +449,13 @@ footer .copyright{
     }
 
     #product1 .pro-container {
-        justify-content: center;
-
+    
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        flex-wrap: wrap;
+        margin-left: 0;
+       
     }
 
     #product1 .pro {

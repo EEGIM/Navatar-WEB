@@ -61,6 +61,11 @@ body {
     left: 0;
 }
 
+#header img{
+    margin-left: -40px;
+
+}
+
 #navbar{
     display: flex;
     align-items: center;
@@ -144,12 +149,12 @@ body {
 
 
 /* 가로웹화면에서 햄버거, x 아이콘 안 보이게*/
-#tab {
+#tab{
     display: none;
     align-items: center;
 }
 
-#close {
+#close{
     display: none;
 }
 
@@ -478,13 +483,33 @@ footer .copyright{
 
 }
 
-.review_write .review_write_form{
+.review_write .review_write_form input{
+    width: 600px;
+    height: 280px;
+    font-size: 20px;
     
 }
 
-.review_write .review_write_form span{
+.review_write .review_write_form .review_writing{
     font-size: 24px;
     font-weight: 600;
+    background-color: #ddd;
+}
+
+.review_write_star_rating{
+    user-select: none;  
+    margin-top: 15px; 
+}
+
+.review_write_star_rating .star{
+    font-size: 30px;
+    color: #ff9800;
+    background-color: unset;
+    border: none;
+}
+
+.review_write_star_rating .star:hover{
+    cursor: pointer;
 }
 
 
@@ -532,10 +557,12 @@ footer .copyright{
 
 .review_star_rating{
     margin-top: 20px;
+    
 }
 
 .review_star i{
     color: #f6cd17;
+
 }
 
 .review_text{
@@ -546,6 +573,24 @@ footer .copyright{
     margin-top: 15px;
 }
 
+.review_write_imgBtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.review_write_applyBtn{
+    background-color: #083c81;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+}
+.review_write_cancleBtn{
+    width: 100px;
+    height: 30px;
+    background-color: #d1d1e0;
+
+}
 
 
 
@@ -689,14 +734,135 @@ footer .copyright{
 #login-area .contentBx .formBx .scl li img{
     justify-content: center; 
 }
+
+
+
+
+
+
+/* Responsive Wed Settings (Tab) */
+@media (max-width:799px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #dcc7b0;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #tab{
+        display: flex;
+        align-items: center;
+    }
+
+    #tab i{
+        font-size: 24px;
+        color: #575757;
+
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: #575757;
+    }
+
+    #navbar .sub-bar{
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #navbar .sub-bar ul{
+        margin-top: 15px;
+        margin-left: -5px;
+        margin-bottom: -10px;
+    }
+
+    #navbar li:hover .sub-bar {
+        position:fixed;
+        background-color: #dcc7b0;
+        margin-left: -155px;
+        top: 100px;
+        /* z-index: 1; 맨앞으로 나오게 */
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #navbar li:hover .sub-bar ul li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 0;
+        text-align: center;
+        width: 160px;
+    }
+
+    #navbar .sub-bar ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*
+    #navbar li:hover .sub-bar {
+        display: flex;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+
+    #navbar li:hover .sub-bar ul li {
+        margin-top: 15px;
+        
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 0;
+        text-align: center;
+        width: 160px;
+    }*/
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-
-
-
-
-
-
-/* Responsive Wed Settings (Tab) 
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -711,7 +877,7 @@ footer .copyright{
         right: -300px;
         height: 100vh;
         width: 300px;
-        background-color: #E3E6F3;
+        background-color: #dcc7b0;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
@@ -724,6 +890,30 @@ footer .copyright{
     #navbar li {
         margin-bottom: 25px;
     }
+
+    #navbar li a.active::after {
+        display: none;
+    }
+
+    #navbar .sub-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+
+    #navbar li:hover .sub-bar {
+        display: block;
+        background-color: #088178;
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+
+
+
+
     #tab {
         display: flex;
         align-items: center;
@@ -764,7 +954,8 @@ footer .copyright{
     }
 }
 
- Responsive Wed Settings (phone) 
+
+ /* Responsive Wed Settings (phone) 
 @media (max-width: 477px) {
 
     .section-p1 {

@@ -1,6 +1,7 @@
 const bar = document.getElementById('bar');
-const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
+const close = document.getElementById('close');
+
 
 if (bar) {
     bar.addEventListener('click', () => {
@@ -13,3 +14,21 @@ if (close) {
         nav.classList.remove('active')
     })
 }
+
+/* 리뷰 별 선택하기 */
+const allStars = document.querySelectorAll('.star');
+
+        allStars.forEach((star, i) => {
+            star.onclick = function () {
+                let current_star_level = i + 1;
+
+                allStars.forEach((star, j) => {
+                    if (current_star_level >= j + 1) {
+                    star.innerHTML = '<i class="fa-solid fa-star"></i>';
+                } else {
+                    star.innerHTML = '<i class="fa-regular fa-star"></i>';
+                }
+
+                })
+            }
+        })
