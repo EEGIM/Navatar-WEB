@@ -735,6 +735,18 @@ footer .copyright{
     justify-content: center; 
 }
 
+/* Sign Up Page */
+#signup_wrapper {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px 12px;
+    border: 1px solid #dcc7b0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+
+}
 
 
 
@@ -826,24 +838,7 @@ footer .copyright{
         font-weight: 500;
         text-align: center;
     }
-
-    /*
-    #navbar li:hover .sub-bar {
-        display: flex;
-        position: absolute;
-        margin-left: -50px;
-        margin-top: 15px;
-    }
-
-    #navbar li:hover .sub-bar ul li {
-        margin-top: 15px;
-        
-        margin-left: -10px;
-        margin-right: -10px;
-        border-radius: 0;
-        text-align: center;
-        width: 160px;
-    }*/
+    
     
 }
 

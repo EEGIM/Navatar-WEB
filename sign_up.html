@@ -35,53 +35,56 @@
                     </ul>
                 </div>
                 </li>
-
                 <li><a href="arfitting.html">AR Fitting</a></li>
                 <li><a href="foryou.html">For You</a></li>
                 <li><a href="about.html">About</a></li>
                 <li id="loginicon"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-                <!-- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="tab">
-            <a href="login.html"><i class="fa-solid fa-user"></i></a>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
+    
     </section>
 
-    <section id="login-area">
-
-        <div class="contentBx">
-            <div class="formBx">
-                <h2>Login</h2>
-                <form>
-                    <div class="inputBx">
-                        <span>User ID</span>
-                        <input type="text" name="">
-                    </div>
-                    <div class="inputBx">
-                        <span>Password</span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="remember">
-                        <label><input type="checkbox" name=""> Remember ID</label>
-                    </div>
-                    <div class="inputBx">
-                        <input type="submit" value="Sign in" name="">
-                    </div>
-                    <div class="inputBx">
-                        <p>Don't have an account? <a href="sign_up.html">Create account</a></p>
-                    </div>
-                </form>
-                <h4>SNS 계정으로 시작하기</h4>
-                <ul class="scl">
-                    <li><img class="naver" src="img/loginbtn_naver.png" width="250px"></li>
-                    <li><img class="kakao" src="img/loginbtn_kakao.png" width="250px"></li>
-                </ul>
-            </div>
+    <section id="signup_wrapper">
+        <div id="signup_text">
+            회원가입
         </div>
+        <div class="signup_form">
+            <div class="input_field">
+                <label>이메일</label>
+                <input type="text" class="input_email">
+            </div>
+            <div class="input_field">
+                <label>비밀번호</label>
+                <input type="password" class="input_password">
+            </div>
+            <div class="input_field">
+                <label>비밀번호 확인</label>
+                <input type="password" class="input_password">
+            </div>
+            <div class="input_field">
+                <label>키</label>
+                <input type="text" class="input_height">
+            </div>
+            <div class="input_field">
+                <label>몸무게</label>
+                <input type="text" class="input_weight">
+            </div>
+            <div>
+                * AR 피팅을 위해 정확한 정보를 입력해주세요.
+            </div>
+            <div class="inputbtn">
+                <input type="submit" value="가입하기" class="btn" onclick="location.href='sign_up_after.html'">
+            </div>
+
+        </div>
+
     </section>
+
+    
 
     <footer class="section-p1">
         <div class="col">
