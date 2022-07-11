@@ -624,6 +624,16 @@ footer .copyright{
     width: 100%;
     height: 70vh;
     display: flex;
+    max-width: 600px;
+    height: 650px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px 12px;
+    border: 1px solid #dcc7b0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+    
 }
 
 #login-area .contentBx{
@@ -738,6 +748,7 @@ footer .copyright{
 /* Sign Up Page */
 #signup_wrapper {
     max-width: 600px;
+    height: 650px;
     width: 100%;
     background: #fff;
     margin: 20px auto;
@@ -747,6 +758,68 @@ footer .copyright{
     box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
 
 }
+
+#signup_wrapper h2{
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #083c81;
+    letter-spacing: 1px;
+}
+
+
+#signup_wrapper .inputbtn {
+    align-items: center;
+}
+
+/* My Page */
+
+#mypage-area{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    max-width: 600px;
+    height: 650px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px 12px;
+    border: 1px solid #dcc7b0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+    
+}
+
+#mypage-area .contentBx{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#mypage-area .contentBx h2{
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #083c81;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
 
 
 
