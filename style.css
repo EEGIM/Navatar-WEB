@@ -812,6 +812,88 @@ footer .copyright{
     align-items: center;
 }
 
+/* Sign up After */
+
+#signupA-area {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    max-width: 600px;
+    height: 650px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px 12px;
+    border: 1px solid #dcc7b0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+    
+}
+
+#signupA-area .contentBx{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /*스크롤 생성*/
+}
+
+#signupA-area .contentBx .formBx {
+    margin-top: -350px;
+}
+
+
+#signupA-area .contentBx .formBx h2{
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #083c81;
+    letter-spacing: 1px;
+}
+
+
+#signupA-area .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#signup-area .contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #083c81;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #222;
+    background: transparent;
+
+}
+
+#signupA-area .contentBx .formBx input[type="button"] {
+
+    background: #083c81;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
 
 /* My Page */
 
@@ -982,6 +1064,11 @@ footer .copyright{
 }
 
 /* MyPage_Like */
+
+#mypage-area .contentBx .mypagelike-form {
+    overflow: auto;
+}
+
 #mypage-area .contentBx .mypagelike-form .pro {
     
     width: 23%;
@@ -1029,52 +1116,87 @@ footer .copyright{
     font-size: 15px;
     font-weight: 700;
 }
+#mypage-area .contentBx .mypagelike-form .pro .fa-circle-xmark {
+
+    background-color: #c8c8c8;  
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 70px; 
+}
+#mypage-area .contentBx .mypagelike-form .pro .fa-circle-xmark::before {
+    display: none;
+}
+
+#mypage-area .contentBx .mypagelike-form .pro .fa-circle-xmark:hover,
+#mypage-area .contentBx .mypagelike-form .pro .fa-circle-xmark::after {
+    background-color: #c8c8c8;  
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 70px; 
+}
 
 #mypage-area .contentBx .mypagelike-form .pro .fa-adn{ /*ar피팅 버튼*/
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #f7f3e7;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     border-radius: 50px;
     font-weight: 500;
     color: #083c81;
     border: 1px solid #eae4d3;
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     right: 10px;
 
 }
 
 /* MyPage_Cart */
-#mypage-area .contentBx .mypagecart-form .pro {
-    
-    width: 23%;
-    min-width: 160px;
+
+#mypage-area .contentBx .mypagecart-form .cart-pro {
+
+    display:flex;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 5px 5px;
+    height: 150px;
     transition: 0.2s ease;
     position: relative;
-    display: inline-block;
-
+    
 }
 
-#mypage-area .contentBx .mypagecart-form .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06); /*제품에 마우스 가져갔을 때 그림자*/
+#mypage-area .contentBx .mypagecart-form .cart-pro .pro {
+    
+    width: 80%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: relative;
+    display: flex;
+
 }
 
 #mypage-area .contentBx .mypagecart-form .pro img {
     width: 100%;
+    max-width: 150px;
+    height: auto;
     border-radius: 20px;
 }
 
 #mypage-area .contentBx .mypagecart-form .pro .des {
     text-align: start;
     padding: 10px 0;
+    margin-left: 20px;
+    width: 50%;
 }
 
 #mypage-area .contentBx .mypagecart-form .pro .des span {
@@ -1095,21 +1217,81 @@ footer .copyright{
     font-weight: 700;
 }
 
-#mypage-area .contentBx .mypagecart-form .pro .fa-adn{ /*ar피팅 버튼*/
-    width: 40px;
-    height: 40px;
-    background-color: #f7f3e7;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50px;
-    font-weight: 500;
-    color: #083c81;
-    border: 1px solid #eae4d3;
-    position: absolute;
-    bottom: 15px;
-    right: 10px;
+
+
+
+/* MyPage_Order */
+
+#mypage-area .contentBx .mypageorder-form .order-pro {
+
+    display:flex;
+    padding: 10px 12px;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    height: 150px;
+    transition: 0.2s ease;
+    position: relative;
+    
+}
+
+#mypage-area .contentBx .mypageorder-form .order-pro .pro {
+    
+    width: 80%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: relative;
+    display: flex;
 
 }
+
+#mypage-area .contentBx .mypageorder-form .pro img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#mypage-area .contentBx .mypageorder-form .pro .des {
+    text-align: start;
+    padding: 10px 0;
+    margin-left: 20px;
+    width: 50%;
+}
+
+#mypage-area .contentBx .mypageorder-form .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#mypage-area .contentBx .mypageorder-form .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#mypage-area .contentBx .mypageorder-form .pro .des h4 {
+    padding-top: 7px;
+    color: #083c81;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#mypage-area .contentBx .mypageorder-form .order-reviewBtn input[type="button"]{
+
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border: none;
+    margin-top: 50px;
+
+
+}
+
 
 /* Review Area */
 
