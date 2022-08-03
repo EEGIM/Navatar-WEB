@@ -22,9 +22,9 @@
 
         <div>
             <ul id = "navbar">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-                <li><a>Shop</a>
+                <li><a class="active">Shop</a>
                 <div class="sub-bar">
                     <ul>
                         <li><a href="shop_rc.html">ROMANTIC CLOWN</a></li>
@@ -35,71 +35,56 @@
                     </ul>
                 </div>
                 </li>
+
                 <li><a href="arfitting.html">AR Fitting</a></li>
                 <li><a href="foryou.html">For You</a></li>
                 <li><a href="about.html">About</a></li>
                 <li id="loginicon"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                <!-- <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="tab">
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
-    
     </section>
 
-    <section id="mypageinfo-area">
+    <section id="reviewdetails">
         <div class="contentBx">
-            <div class="formBx">
-                <h2><i class="fa-solid fa-user-check"></i></h2>
-                <form>
-                    <div class="inputBx">
-                        <span>이메일 <em> * </em> </span>
-                        <input type="text" name="">
+            <div class="reviewdRead">
+                <div class="title">
+                    <h3>ar피팅하고 샀더니 딱 맞아요~</h3>
+                </div>
+                <div class="info ">
+                    <p class="writer">닉네임5</p>
+                    <p class="regdate ">2022-08-02</p>
+                    <p class="rating ">
+                        <img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_star5.png" alt="5점"></p>
+                </div>
+
+                <div class="content">
+                    <div class="fr-view fr-view-article">
+                        신  장 : 163cm<br><br>
+                        몸무게 : 50kg<br><br>
+                        구매 사이즈 : M<br><br>
+                        후기내용 : M사이즈랑 L사이즈 중에서 고민했는데 ar피팅 해보고 M사이즈로 샀더니 딱 맞아요!
                     </div>
-                    <div class="inputBx">
-                        <span>현재 비밀번호 <em> * </em></span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="inputBx">
-                        <span>새로운 비밀번호 <em> * </em></span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="inputBx">
-                        <span>새로운 비밀번호 확인 <em> * </em></span>
-                        <input type="password" name="">
-                    </div>
-                    <div class="inputBx">
-                        <span>닉네임 <em> * </em> </span>
-                        <input type="text" name="">
-                    </div>
-                    <div class="inputBx">
-                        <span>키 <em> * </em></span>
-                        <input type="text" name="" >
-                    </div>
-                    <div class="inputBx">
-                        <p><em> * </em> AR 피팅을 위해 정확한 정보를 입력해주세요.</p>
-                    </div>
-                    <div class="inputBx">
-                        <span>몸무게 <em> * </em></span>
-                        <input type="text" name="" >
-                    </div>
-                    <div class="inputBx">
-                        <p><em> * </em> AR 피팅을 위해 정확한 정보를 입력해주세요.</p>
-                    </div>
-                    <div class="signupinputBx">
-                        <input type="button" value="수정 완료" name="" onclick="location.href='mypage.html';">
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="review_pic">
+                    <img src="img/products/n1.jpg" alt="" >
+                    <img src="img/products/n2.jpg" alt="" >
+                    <img src="img/products/n3.jpg" alt="" >
+                </div>
+            </div> 
         </div>
     </section>
-
+ 
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="" width="100px">
             <h4>Contact</h4>
-            <p><strong>Address: </strong>나바타</p>
+            <p><strong>Address: </strong>덕성여자대학교</p>
             <p><strong>Phone: </strong>0123456789</p>
             <p><strong>Github: </strong>git address</p>
         </div>
@@ -117,8 +102,5 @@
             <p> Copyright ©  </p>
         </div>
     </footer>
-    
-
-    <script src="script.js"></script>
 </body>
 </html>
