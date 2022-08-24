@@ -2083,9 +2083,6 @@ padding: 0;
     }
 
 
-
-
-
     #navbar .sub-bar2{
         display: none;
         align-items: center;
@@ -2124,7 +2121,23 @@ padding: 0;
         font-weight: 500;
         text-align: center;
     }
+
+    #product1 {
+        text-align: center;
+    }
     
+    .section-p1 {
+        padding: 40px 100px;
+    }
+    
+    /**
+    #product1 .pro-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;**/
+        
+
     
 }
 
