@@ -2413,4 +2413,10 @@ padding: 0;
         right: 7px;
     }
 
+    /* sign in page */
+    #login-area {
+        border: 0px solid #dcc7b0;
+        margin-top: 0px;
+    }
+
 } 
