@@ -2476,6 +2476,27 @@ padding: 0;
         margin-top: 0px;
     }
 
+    /* sign up page */
+    #signup-area {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        max-width: 600px;
+        height: 650px;
+        width: 100%;
+        background: #fff;
+        
+        padding: 10px 12px;
+        border: 0px solid #dcc7b0;
+        border-radius: 25px;
+        box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+        margin-top: 50px;
+    }
+
+    #signup-area .contentBx .formBx h2 {
+        margin-top: 55px;
+    }
 
 
 } 
