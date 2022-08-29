@@ -2381,7 +2381,20 @@ padding: 0;
     }
     
     .section-p1 {
-        padding: 40px 100px;
+        padding: 40px 90px;
+    }
+
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #dfdcd3;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgb(0 0 0 / 2%);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
     }
 
     /* after sign up page  */
@@ -2392,19 +2405,6 @@ padding: 0;
     
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2783,4 +2783,6 @@ padding: 0;
     }
 
 } 
+
+
 
