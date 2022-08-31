@@ -19,12 +19,16 @@
 <body>
     <section id="header">
         <a href="index.html"><img src="img/logo.png" class="logo" alt="" width=150px></a>
+        <div class="header-icon">
+            <i class="fa-solid fa-arrow-left" onClick="history.go(-1)"></i>
+            <a href="index.html" id="home"><i class="fa-solid fa-house"></i></a>
+        </div>
 
         <div>
             <ul id = "navbar">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-                <li><a>Shop</a>
+                <li><a class="active">Shop</a>
                 <div class="sub-bar">
                     <ul>
                         <li><a href="shop_rc.html">ROMANTIC CLOWN</a></li>
@@ -72,18 +76,19 @@
 
                 <div class="content">
                     <div class="fr-view fr-view-article">
+                        <img class="reviewimg" src="img/products/f2.jpg"><br>
                         신  장 : 163cm<br><br>
                         몸무게 : 50kg<br><br>
                         구매 사이즈 : M<br><br>
                         후기내용 : M사이즈랑 L사이즈 중에서 고민했는데 ar피팅 해보고 M사이즈로 샀더니 딱 맞아요!
                     </div>
                 </div>
-                <div class="review_pic">
-                    <img src="img/products/n1.jpg" alt="" >
-                    <img src="img/products/n2.jpg" alt="" >
-                    <img src="img/products/n3.jpg" alt="" >
-                </div>
             </div> 
+            <div class="reviewbtnArea">        
+                <span class="modify"><a href="#">수정</a></span>   
+                <span class="delete"><a href="#">삭제</a></span>   
+                <span class="list"><a href="#">상품으로 돌아가기</a></span>    
+            </div>
         </div>
     </section>
  

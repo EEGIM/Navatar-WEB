@@ -19,10 +19,14 @@
 <body>
     <section id="header">
         <a href="index.html"><img src="img/logo.png" class="logo" alt="" width=150px></a>
+        <div class="header-icon">
+            <i class="fa-solid fa-arrow-left" onClick="history.go(-1)"></i>
+            <a href="index.html" id="home"><i class="fa-solid fa-house"></i></a>
+        </div>
 
         <div>
             <ul id = "navbar">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
                 <li><a>Shop</a>
                 <div class="sub-bar">
@@ -35,7 +39,7 @@
                     </ul>
                 </div>
                 </li>
-                <li><a href="arfitting.html">AR Fitting</a></li>
+                <li><a class="active" href="arfitting.html">AR Fitting</a></li>
                 <li><a href="foryou.html">For You</a></li>
                 <li><a href="about.html">About</a></li>
 
